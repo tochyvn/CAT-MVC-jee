@@ -40,7 +40,7 @@ public class CatalogueMetierImpl implements IcatalogueMetier {
 			while (rs.next()) {
 				Produit p = new Produit();
 				p.setReference(rs.getString("REF_PROD"));
-				p.setDesignation("DESIGNATION");
+				p.setDesignation(rs.getString("DESIGNATION"));
 				p.setPrix(rs.getDouble("PRIX"));
 				p.setQuantite(rs.getInt("QUANTITE"));
 				produits.add(p);
@@ -90,7 +90,7 @@ public class CatalogueMetierImpl implements IcatalogueMetier {
 			if (rs.next()) {
 				p = new Produit();
 				p.setReference(rs.getString("REF_PROD"));
-				p.setDesignation("DESIGNATION");
+				p.setDesignation(rs.getString("DESIGNATION"));
 				p.setPrix(rs.getDouble("PRIX"));
 				p.setQuantite(rs.getInt("QUANTITE"));
 				
@@ -111,7 +111,7 @@ public class CatalogueMetierImpl implements IcatalogueMetier {
 		String sql = "UPDATE PRODUITS "
 				+ " SET DESIGNATION = ?, "
 				+ " PRIX = ?, "
-				+ " QUANTITE = ?) "
+				+ " QUANTITE = ? "
 				+ " WHERE REF_PROD = ?";
 		try {
 			PreparedStatement ps = conn.prepareStatement(sql);

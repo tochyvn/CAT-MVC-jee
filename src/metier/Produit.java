@@ -61,7 +61,7 @@ public class Produit implements Serializable {
 
 	@Override
 	public String toString() {
-		return "[ REFERENCE : " + reference + " DESIGNATION : " + designation + " PRIX : " + prix + " QUANTITE : " + quantite +  "]";
+		return "{ REFERENCE : " + reference + ", DESIGNATION : " + designation + ", PRIX : " + prix + ", QUANTITE : " + quantite +  "}";
 	}
 	
 	

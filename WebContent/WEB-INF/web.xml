@@ -18,6 +18,6 @@
   <servlet-mapping>
   	<servlet-name>cs</servlet-name>
   	<url-pattern>/controleur</url-pattern>
-  	<url-pattern>*.php</url-pattern>
+  	<url-pattern>*.io</url-pattern>
   </servlet-mapping>
 </web-app>
