@@ -2,3 +2,7 @@
 .ma-marge {
 	margin-top: 10px;
 }
+
+.top-buffer { margin-top:20px; }
+
+.bottom-buffer { margin-top:20px; margin-bottom: 20px;}
