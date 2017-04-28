@@ -12,9 +12,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="public/css/style.css" />
 	</head>
-	<body>
+	<body class="bottom-buffer">
 		<div class="container">
-			<div class="row ma-marge">
+			<div class="row top-buffer">
 				<div class="col-lg-12 well">
 					<form class="form-inline" method="post" action="post.io">
 					  <div class="form-group">
@@ -27,7 +27,7 @@
 				
 			</div>
 			
-			<div class="row well">
+			<div class="row well top-buffer">
 				<table class="table table-inverse table-striped">
 				 <thead class="thead-inverse">
 				   <tr>
